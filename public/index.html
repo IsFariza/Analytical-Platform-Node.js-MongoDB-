@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="mainContainer">
+    <form id="blogForm" class="m-4">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="body" class="form-label">Body:</label>
+            <input type="text" class="form-control" id="body" required>
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">Author:</label>
+            <input type="text" class="form-control" id="author">
+        </div>
+       
+        <button type="submit" class="btn btn-primary " id="submitBtn">Submit</button>
+        <button type="button" class="btn btn-success" id="saveBtn" style="display:none;">Save Edits</button>
+    </form>
+    <div id="blogs"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
